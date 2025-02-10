@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
+import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
 
 const Navbar = () => {
   {
-    /* fun() to dtermine on which u are so that color of navbar could be manupulated */
+    /* fun() to dtermine color of navbar */
   }
   const isCourseListPage = location.pathname.includes("/course-list");
+
+  const { openSignIn } = useClerk();
+  const { user } = useUser();
 
   return (
     <div
@@ -21,23 +25,41 @@ const Navbar = () => {
         className="w-18 lg:w-18 cursor-pointer"
       />
       <div className="hidden md:flex items-center gap-5 text-gray-500">
-        <div>
-          <button>Become Educator</button> | &nbsp;
-          <Link to="/my-enrollment">My Enrollments</Link>
+        <div className="flex items-center gap-5">
+          {user && (
+            <>
+              <button>Become Educator</button> | &nbsp;
+              <Link to="/my-enrollment">My Enrollments</Link>
+            </>
+          )}
         </div>
-        <button className="bg-blue-600 text-white px-5 py-2 rounded-full">
-          Create Account
-        </button>
+        {user ? (
+          <UserButton />
+        ) : (
+          <button
+            onClick={() => openSignIn()}
+            className="bg-blue-600 text-white px-5 py-2 rounded-full"
+          >
+            Create Account
+          </button>
+        )}
       </div>
       {/* for phone Screens */}
       <div className="md:hidden flex items-center gap-2 sm:gap-5 text-gray-500">
-        <div>
-          <button>Become Educator</button> | &nbsp;
-          <Link to="/my-enrollment">My Enrollments</Link>
+        <div className="flex items-center gap-1 sm:gap-2 max-sm:text-xs">
+          {user && (
+            <>
+              <button>Become Educator</button> | &nbsp;
+              <Link to="/my-enrollment">My Enrollments</Link>
+            </>
+          )}
         </div>
-        <button className="cursor-pointer" >
+        {
+          user ? <UserButton/> : 
+        <button onClick={() => openSignIn()} className="cursor-pointer">
           <PermIdentityIcon />
         </button>
+        }
       </div>
     </div>
   );
