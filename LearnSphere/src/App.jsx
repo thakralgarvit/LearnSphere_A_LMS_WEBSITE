@@ -1,6 +1,8 @@
 import React from "react";
-{/* these are used to route between pages */}
-import { Route, Routes, useMatch } from "react-router-dom"; 
+{
+  /* these are used to route between pages */
+}
+import { Route, Routes, useMatch } from "react-router-dom";
 import Home from "./pages/students/Home";
 import CoursesList from "./pages/students/CoursesList";
 import CourseDetails from "./pages/students/CourseDetails";
@@ -13,8 +15,11 @@ import AddCourse from "./pages/educators/AddCourse";
 import MyCourses from "./pages/educators/MyCourses";
 import StudentsEnrolled from "./pages/educators/StudentsEnrolled";
 import Navbar from "./components/students/Navbar";
+import "./index.css";
 
-{/*  */}
+{
+  /*  */
+}
 
 const App = () => {
   const isEducatorRoute = useMatch("/educator/*");
@@ -22,7 +27,7 @@ const App = () => {
   return (
     <div className="text-default min-h-screen bg-white">
       {/* as the educators have different navbar */}
-      {!isEducatorRoute && <Navbar />} 
+      {!isEducatorRoute && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course-list" element={<CoursesList />} />
