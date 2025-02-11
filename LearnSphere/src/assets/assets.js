@@ -67,7 +67,7 @@ export const dummyCourses = [
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=1",
+    courseThumnail: "https://img.youtube.com/vi/yRpLlJmRo2w/maxresdefault.jpg",
   },
   {
     id: "course_2",
@@ -137,7 +137,7 @@ export const dummyCourses = [
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=2",
+    courseThumnail: "https://img.youtube.com/vi/6R0TkF6Mgrk/maxresdefault.jpg",
   },
   {
     id: "course_3",
@@ -207,7 +207,7 @@ export const dummyCourses = [
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=3",
+    courseThumnail: "https://img.youtube.com/vi/Hb9QvSODBPY/maxresdefault.jpg",
   },
   {
     id: "course_4",
@@ -277,7 +277,7 @@ export const dummyCourses = [
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=4",
+    courseThumnail: "https://img.youtube.com/vi/6dqAwh2MCg0/maxresdefault.jpg",
   },
   {
     id: "course_5",
@@ -347,7 +347,7 @@ export const dummyCourses = [
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=5",
+    courseThumnail: "https://img.youtube.com/vi/voXYG17rhQA/maxresdefault.jpg",
   },
   {
     id: "course_6",
@@ -1441,6 +1441,6 @@ export const dummyCourses = [
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=20",
+    courseThumnail: "https://img.youtube.com/vi/add-here/maxresdefault.jpg0",
   },
 ];

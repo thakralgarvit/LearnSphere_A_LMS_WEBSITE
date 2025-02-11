@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
+import { AppContext } from "../../store/AppContext";
 
 const Navbar = () => {
   {
     /* fun() to dtermine color of navbar */
   }
+
+  const { navigate } = useContext(AppContext);
+
   const isCourseListPage = location.pathname.includes("/course-list");
 
   const { openSignIn } = useClerk();
@@ -19,7 +23,7 @@ const Navbar = () => {
       isCourseListPage ? "bg-white" : "bg-cyan-100/70"
     }`}
     >
-      <img
+      <img onClick={() => navigate("/")}
         src="\src\assets\logo.png"
         alt=" Logo"
         className="w-18 lg:w-18 cursor-pointer"
