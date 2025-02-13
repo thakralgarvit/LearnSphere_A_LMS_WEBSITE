@@ -9,11 +9,23 @@ export const AppContextProvider = (props) => {
   const navigate = useNavigate();
 
   const [allCourses, setAllCourses] = useState([]);
+  const [isEducator, setisEducator] = useState(true);
 
   // fun to get all the data to be sen to different parts of the project
   const getAllCourses = async () => {
     setAllCourses(dummyCourses);
   };
+
+  //fun to calculate avg rating of course
+  const calRating = (course) => {
+    if(course.courseRating.length === 0) return 0;
+    
+    let totalRating = 0;
+    course.courseRating.forEach(rating => {
+      totalRating += rating.rating;
+    });
+    return totalRating / course.courseRating.length;
+  }
 
   useEffect(() => {
     getAllCourses();
@@ -22,7 +34,9 @@ export const AppContextProvider = (props) => {
   const value = {
     currency,
     allCourses,
-    navigate
+    navigate,
+    calRating,
+    isEducator, setisEducator
   };
 
   return (

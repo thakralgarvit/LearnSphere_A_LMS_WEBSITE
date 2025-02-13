@@ -60,7 +60,7 @@ export const dummyCourses = [
     courseRating: [
       {
         userId: "user_rating_course_1",
-        rating: 5,
+        rating: 3,
         _id: "rating_course_1_1",
       },
     ],
@@ -130,7 +130,7 @@ export const dummyCourses = [
     courseRating: [
       {
         userId: "user_rating_course_2",
-        rating: 5,
+        rating: 2,
         _id: "rating_course_2_1",
       },
     ],

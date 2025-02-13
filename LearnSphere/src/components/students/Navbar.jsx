@@ -9,7 +9,7 @@ const Navbar = () => {
     /* fun() to dtermine color of navbar */
   }
 
-  const { navigate } = useContext(AppContext);
+  const { navigate, isEducator } = useContext(AppContext);
 
   const isCourseListPage = location.pathname.includes("/course-list");
 
@@ -23,7 +23,8 @@ const Navbar = () => {
       isCourseListPage ? "bg-white" : "bg-cyan-100/70"
     }`}
     >
-      <img onClick={() => navigate("/")}
+      <img
+        onClick={() => navigate("/")}
         src="\src\assets\logo.png"
         alt=" Logo"
         className="w-18 lg:w-18 cursor-pointer"
@@ -32,7 +33,14 @@ const Navbar = () => {
         <div className="flex items-center gap-5">
           {user && (
             <>
-              <button>Become Educator</button> | &nbsp;
+              <button
+                onClick={() => {
+                  navigate("/educator");
+                }}
+              >
+                {isEducator ? "Educator Dashboard" : "Become Educator"}
+              </button>{" "}
+              | &nbsp;
               <Link to="/my-enrollment">My Enrollments</Link>
             </>
           )}
@@ -53,17 +61,24 @@ const Navbar = () => {
         <div className="flex items-center gap-1 sm:gap-2 max-sm:text-xs">
           {user && (
             <>
-              <button>Become Educator</button> | &nbsp;
+              <button
+                onClick={() => {
+                  navigate("/educator");
+                }}
+              >
+                {isEducator ? "Educator Dashboard" : "Become Educator"}
+              </button> | &nbsp;
               <Link to="/my-enrollment">My Enrollments</Link>
             </>
           )}
         </div>
-        {
-          user ? <UserButton/> : 
-        <button onClick={() => openSignIn()} className="cursor-pointer">
-          <PermIdentityIcon />
-        </button>
-        }
+        {user ? (
+          <UserButton />
+        ) : (
+          <button onClick={() => openSignIn()} className="cursor-pointer">
+            <PermIdentityIcon />
+          </button>
+        )}
       </div>
     </div>
   );
