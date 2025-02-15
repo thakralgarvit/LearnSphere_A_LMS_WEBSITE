@@ -1,16 +1,18 @@
 @import "tailwindcss";
 @theme {
   --color-logo-l: #052439;
+  --color-logo-s: #ce9a34;
+  --spacing-section-height: 500px;
 }
 * {
   font-family: sans-serif;
   font-size: 15px, 21px;
 }
 .course-details-headoing-small {
-  font-size: 26px, 36px;
+  font-size: 36px;
 }
 .course-details-headoing-large {
-  font-size: 36px, 44px;
+  font-size: 44px;
 }
 .text-home-heading-small {
   font-size: 28px, 34px;
@@ -20,6 +22,9 @@
 }
 .hero-heading {
   font-size: clamp(28px, 4vw, 56px);
+}
+.j_section {
+  height: 500px;
 }
 :root {
   --auto: repeat(auto-fit, minmax(270px, 1fr));

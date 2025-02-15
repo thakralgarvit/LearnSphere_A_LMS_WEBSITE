@@ -9,7 +9,8 @@ const Footer = () => {
       justify-center gap-10 md:gap-32 py-10 border-b border-white/30"
       >
         <div className="md:items-start items-center w-full">
-          <img className="w-15" src="src\assets\logo1.png" alt="logo" />
+          <h1 className="text-logo-s text-2xl">LEARN<b>SPHERE</b></h1>
+          {/* <img className="w-15" src="src\assets\logo1.png" alt="logo" /> */}
           <p className="mt-6 text-center md:text-left text-sm text-white/80">
             Connecting learners with expert instructors in a dynamic online
             environment. Explore a wide range of subjects, from technology to
@@ -17,11 +18,11 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:items-start items-center w-full">
+        <div className="flex flex-col md:items-center items-center w-full">
           <h2 className="font-semibold text-white mb-5">Company</h2>
           <ul
             className="flex md:flex-col w-full justify-between text-sm 
-          text-white md:space-y-2"
+          text-white md:space-y-2 items-center"
           >
             <li>
               <a href="#">Home</a>

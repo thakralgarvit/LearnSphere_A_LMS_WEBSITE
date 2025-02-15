@@ -1,6 +1,6 @@
 export const dummyCourses = [
   {
-    id: "course_1",
+    _id: "course_1",
     courseTitle: "Introduction to JavaScript",
     courseDescription:
       "<h2>About this course</h2><p>This course covers the fundamentals and advanced topics of JavaScript.</p><ul><li>Hands-on projects</li><li>Expert instructors</li><li>Comprehensive curriculum</li></ul>",
@@ -9,12 +9,12 @@ export const dummyCourses = [
     discount: 10,
     courseContent: [
       {
-        chapterId: "course_1_chapter1",
+        chapter_id: "course_1_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with JavaScript",
         chapterContent: [
           {
-            lectureId: "course_1_chapter1_lecture1",
+            lecture_id: "course_1_chapter1_lecture1",
             lectureTitle: "Introduction to JavaScript",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy1_1",
@@ -22,7 +22,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_1_chapter1_lecture2",
+            lecture_id: "course_1_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy1_2",
@@ -32,12 +32,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_1_chapter2",
+        chapter_id: "course_1_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in JavaScript",
         chapterContent: [
           {
-            lectureId: "course_1_chapter2_lecture1",
+            lecture_id: "course_1_chapter2_lecture1",
             lectureTitle: "Core Concepts of JavaScript",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy1_3",
@@ -45,7 +45,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_1_chapter2_lecture2",
+            lecture_id: "course_1_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy1_4",
@@ -59,9 +59,9 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_1_1", "user_course_1_2", "user_course_1_3"],
     courseRating: [
       {
-        userId: "user_rating_course_1",
+        user_id: "user_rating_course_1",
         rating: 3,
-        _id: "rating_course_1_1",
+        __id: "rating_course_1_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
@@ -70,7 +70,7 @@ export const dummyCourses = [
     courseThumnail: "https://img.youtube.com/vi/yRpLlJmRo2w/maxresdefault.jpg",
   },
   {
-    id: "course_2",
+    _id: "course_2",
     courseTitle: "Advanced Python Programming",
     courseDescription:
       "<h2>About this course</h2><p>This course covers the fundamentals and advanced topics of Advanced Python Programming.</p><ul><li>Hands-on projects</li><li>Expert instructors</li><li>Comprehensive curriculum</li></ul>",
@@ -79,12 +79,12 @@ export const dummyCourses = [
     discount: 15,
     courseContent: [
       {
-        chapterId: "course_2_chapter1",
+        chapter_id: "course_2_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Advanced Python Programming",
         chapterContent: [
           {
-            lectureId: "course_2_chapter1_lecture1",
+            lecture_id: "course_2_chapter1_lecture1",
             lectureTitle: "Introduction to Advanced Python Programming",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy2_1",
@@ -92,7 +92,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_2_chapter1_lecture2",
+            lecture_id: "course_2_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy2_2",
@@ -102,12 +102,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_2_chapter2",
+        chapter_id: "course_2_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Advanced Python Programming",
         chapterContent: [
           {
-            lectureId: "course_2_chapter2_lecture1",
+            lecture_id: "course_2_chapter2_lecture1",
             lectureTitle: "Core Concepts of Advanced Python Programming",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy2_3",
@@ -115,7 +115,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_2_chapter2_lecture2",
+            lecture_id: "course_2_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy2_4",
@@ -129,9 +129,9 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_2_1", "user_course_2_2", "user_course_2_3"],
     courseRating: [
       {
-        userId: "user_rating_course_2",
+        user_id: "user_rating_course_2",
         rating: 2,
-        _id: "rating_course_2_1",
+        __id: "rating_course_2_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
@@ -140,21 +140,21 @@ export const dummyCourses = [
     courseThumnail: "https://img.youtube.com/vi/6R0TkF6Mgrk/maxresdefault.jpg",
   },
   {
-    id: "course_3",
+    _id: "course_3",
     courseTitle: "Data Structures and Algorithms",
     courseDescription:
-      "<h2>About this course</h2><p>This course covers the fundamentals and advanced topics of Data Structures and Algorithms.</p><ul><li>Interactive examples</li><li>Expert guidance</li><li>Real-world problems</li></ul>",
+      "<h2>About this course</h2><p>This course covers the fundamentals and advanced topics of Data Structures and Algorithms.</p><ul><li>Interactive examples</li><li>Expert gu_idance</li><li>Real-world problems</li></ul>",
     coursePrice: 2700,
     isPublished: true,
     discount: 20,
     courseContent: [
       {
-        chapterId: "course_3_chapter1",
+        chapter_id: "course_3_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Data Structures and Algorithms",
         chapterContent: [
           {
-            lectureId: "course_3_chapter1_lecture1",
+            lecture_id: "course_3_chapter1_lecture1",
             lectureTitle: "Introduction to Data Structures and Algorithms",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy3_1",
@@ -162,7 +162,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_3_chapter1_lecture2",
+            lecture_id: "course_3_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy3_2",
@@ -172,12 +172,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_3_chapter2",
+        chapter_id: "course_3_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Data Structures and Algorithms",
         chapterContent: [
           {
-            lectureId: "course_3_chapter2_lecture1",
+            lecture_id: "course_3_chapter2_lecture1",
             lectureTitle: "Core Concepts of Data Structures and Algorithms",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy3_3",
@@ -185,7 +185,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_3_chapter2_lecture2",
+            lecture_id: "course_3_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy3_4",
@@ -199,9 +199,9 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_3_1", "user_course_3_2", "user_course_3_3"],
     courseRating: [
       {
-        userId: "user_rating_course_3",
+        user_id: "user_rating_course_3",
         rating: 5,
-        _id: "rating_course_3_1",
+        __id: "rating_course_3_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
@@ -210,7 +210,7 @@ export const dummyCourses = [
     courseThumnail: "https://img.youtube.com/vi/Hb9QvSODBPY/maxresdefault.jpg",
   },
   {
-    id: "course_4",
+    _id: "course_4",
     courseTitle: "Machine Learning Basics",
     courseDescription:
       "<h2>About this course</h2><p>This course introduces the fundamentals of Machine Learning Basics.</p><ul><li>Hands-on exercises</li><li>Industry examples</li><li>Project-based learning</li></ul>",
@@ -219,12 +219,12 @@ export const dummyCourses = [
     discount: 25,
     courseContent: [
       {
-        chapterId: "course_4_chapter1",
+        chapter_id: "course_4_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Machine Learning Basics",
         chapterContent: [
           {
-            lectureId: "course_4_chapter1_lecture1",
+            lecture_id: "course_4_chapter1_lecture1",
             lectureTitle: "Introduction to Machine Learning Basics",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy4_1",
@@ -232,7 +232,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_4_chapter1_lecture2",
+            lecture_id: "course_4_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy4_2",
@@ -242,12 +242,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_4_chapter2",
+        chapter_id: "course_4_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Machine Learning Basics",
         chapterContent: [
           {
-            lectureId: "course_4_chapter2_lecture1",
+            lecture_id: "course_4_chapter2_lecture1",
             lectureTitle: "Core Concepts of Machine Learning Basics",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy4_3",
@@ -255,7 +255,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_4_chapter2_lecture2",
+            lecture_id: "course_4_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy4_4",
@@ -269,9 +269,9 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_4_1", "user_course_4_2", "user_course_4_3"],
     courseRating: [
       {
-        userId: "user_rating_course_4",
+        user_id: "user_rating_course_4",
         rating: 5,
-        _id: "rating_course_4_1",
+        __id: "rating_course_4_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
@@ -280,7 +280,7 @@ export const dummyCourses = [
     courseThumnail: "https://img.youtube.com/vi/6dqAwh2MCg0/maxresdefault.jpg",
   },
   {
-    id: "course_5",
+    _id: "course_5",
     courseTitle: "Full-Stack Web Development",
     courseDescription:
       "<h2>About this course</h2><p>This course covers both front-end and back-end development in Full-Stack Web Development.</p><ul><li>Real-world projects</li><li>Modern technologies</li><li>Expert mentorship</li></ul>",
@@ -289,12 +289,12 @@ export const dummyCourses = [
     discount: 30,
     courseContent: [
       {
-        chapterId: "course_5_chapter1",
+        chapter_id: "course_5_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Full-Stack Web Development",
         chapterContent: [
           {
-            lectureId: "course_5_chapter1_lecture1",
+            lecture_id: "course_5_chapter1_lecture1",
             lectureTitle: "Introduction to Full-Stack Web Development",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy5_1",
@@ -302,7 +302,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_5_chapter1_lecture2",
+            lecture_id: "course_5_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy5_2",
@@ -312,12 +312,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_5_chapter2",
+        chapter_id: "course_5_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Full-Stack Web Development",
         chapterContent: [
           {
-            lectureId: "course_5_chapter2_lecture1",
+            lecture_id: "course_5_chapter2_lecture1",
             lectureTitle: "Core Concepts of Full-Stack Web Development",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy5_3",
@@ -325,7 +325,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_5_chapter2_lecture2",
+            lecture_id: "course_5_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy5_4",
@@ -339,9 +339,9 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_5_1", "user_course_5_2", "user_course_5_3"],
     courseRating: [
       {
-        userId: "user_rating_course_5",
+        user_id: "user_rating_course_5",
         rating: 5,
-        _id: "rating_course_5_1",
+        __id: "rating_course_5_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
@@ -350,7 +350,7 @@ export const dummyCourses = [
     courseThumnail: "https://img.youtube.com/vi/voXYG17rhQA/maxresdefault.jpg",
   },
   {
-    id: "course_6",
+    _id: "course_6",
     courseTitle: "React for Beginners",
     courseDescription:
       "<h2>About this course</h2><p>This course introduces you to React for Beginners with hands-on examples.</p><ul><li>Component-based architecture</li><li>Interactive exercises</li><li>Community support</li></ul>",
@@ -359,12 +359,12 @@ export const dummyCourses = [
     discount: 10,
     courseContent: [
       {
-        chapterId: "course_6_chapter1",
+        chapter_id: "course_6_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with React for Beginners",
         chapterContent: [
           {
-            lectureId: "course_6_chapter1_lecture1",
+            lecture_id: "course_6_chapter1_lecture1",
             lectureTitle: "Introduction to React for Beginners",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy6_1",
@@ -372,7 +372,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_6_chapter1_lecture2",
+            lecture_id: "course_6_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy6_2",
@@ -382,12 +382,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_6_chapter2",
+        chapter_id: "course_6_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in React for Beginners",
         chapterContent: [
           {
-            lectureId: "course_6_chapter2_lecture1",
+            lecture_id: "course_6_chapter2_lecture1",
             lectureTitle: "Core Concepts of React for Beginners",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy6_3",
@@ -395,7 +395,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_6_chapter2_lecture2",
+            lecture_id: "course_6_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy6_4",
@@ -409,32 +409,32 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_6_1", "user_course_6_2", "user_course_6_3"],
     courseRating: [
       {
-        userId: "user_rating_course_6",
+        user_id: "user_rating_course_6",
         rating: 5,
-        _id: "rating_course_6_1",
+        __id: "rating_course_6_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=6",
+    courseThumnail: "https://img.youtube.com/vi/SqcY0GlETPk/maxresdefault.jpg",
   },
   {
-    id: "course_7",
+    _id: "course_7",
     courseTitle: "Node.js Essentials",
     courseDescription:
-      "<h2>About this course</h2><p>This course covers the essentials of Node.js Essentials for server-side development.</p><ul><li>Event-driven architecture</li><li>Asynchronous programming</li><li>Practical projects</li></ul>",
+      "<h2>About this course</h2><p>This course covers the essentials of Node.js Essentials for server-s_ide development.</p><ul><li>Event-driven architecture</li><li>Asynchronous programming</li><li>Practical projects</li></ul>",
     coursePrice: 3100,
     isPublished: true,
     discount: 15,
     courseContent: [
       {
-        chapterId: "course_7_chapter1",
+        chapter_id: "course_7_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Node.js Essentials",
         chapterContent: [
           {
-            lectureId: "course_7_chapter1_lecture1",
+            lecture_id: "course_7_chapter1_lecture1",
             lectureTitle: "Introduction to Node.js Essentials",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy7_1",
@@ -442,7 +442,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_7_chapter1_lecture2",
+            lecture_id: "course_7_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy7_2",
@@ -452,12 +452,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_7_chapter2",
+        chapter_id: "course_7_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Node.js Essentials",
         chapterContent: [
           {
-            lectureId: "course_7_chapter2_lecture1",
+            lecture_id: "course_7_chapter2_lecture1",
             lectureTitle: "Core Concepts of Node.js Essentials",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy7_3",
@@ -465,7 +465,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_7_chapter2_lecture2",
+            lecture_id: "course_7_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy7_4",
@@ -479,32 +479,32 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_7_1", "user_course_7_2", "user_course_7_3"],
     courseRating: [
       {
-        userId: "user_rating_course_7",
+        user_id: "user_rating_course_7",
         rating: 5,
-        _id: "rating_course_7_1",
+        __id: "rating_course_7_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=7",
+    courseThumnail: "https://img.youtube.com/vi/ohIAiuHMKMI/maxresdefault.jpg",
   },
   {
-    id: "course_8",
+    _id: "course_8",
     courseTitle: "Vue.js Crash Course",
     courseDescription:
-      "<h2>About this course</h2><p>This course provides a quick yet comprehensive guide to Vue.js Crash Course.</p><ul><li>Interactive tutorials</li><li>Real-world examples</li><li>Community support</li></ul>",
+      "<h2>About this course</h2><p>This course prov_ides a quick yet comprehensive gu_ide to Vue.js Crash Course.</p><ul><li>Interactive tutorials</li><li>Real-world examples</li><li>Community support</li></ul>",
     coursePrice: 3200,
     isPublished: true,
     discount: 20,
     courseContent: [
       {
-        chapterId: "course_8_chapter1",
+        chapter_id: "course_8_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Vue.js Crash Course",
         chapterContent: [
           {
-            lectureId: "course_8_chapter1_lecture1",
+            lecture_id: "course_8_chapter1_lecture1",
             lectureTitle: "Introduction to Vue.js Crash Course",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy8_1",
@@ -512,7 +512,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_8_chapter1_lecture2",
+            lecture_id: "course_8_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy8_2",
@@ -522,12 +522,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_8_chapter2",
+        chapter_id: "course_8_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Vue.js Crash Course",
         chapterContent: [
           {
-            lectureId: "course_8_chapter2_lecture1",
+            lecture_id: "course_8_chapter2_lecture1",
             lectureTitle: "Core Concepts of Vue.js Crash Course",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy8_3",
@@ -535,7 +535,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_8_chapter2_lecture2",
+            lecture_id: "course_8_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy8_4",
@@ -549,32 +549,32 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_8_1", "user_course_8_2", "user_course_8_3"],
     courseRating: [
       {
-        userId: "user_rating_course_8",
+        user_id: "user_rating_course_8",
         rating: 5,
-        _id: "rating_course_8_1",
+        __id: "rating_course_8_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=8",
+    courseThumnail: "https://img.youtube.com/vi/VeNfHj6MhgA/maxresdefault.jpg",
   },
   {
-    id: "course_9",
+    _id: "course_9",
     courseTitle: "Angular Deep Dive",
     courseDescription:
-      "<h2>About this course</h2><p>This course provides an in-depth look into Angular Deep Dive for building dynamic web applications.</p><ul><li>Comprehensive modules</li><li>Expert insights</li><li>Practical projects</li></ul>",
+      "<h2>About this course</h2><p>This course prov_ides an in-depth look into Angular Deep Dive for building dynamic web applications.</p><ul><li>Comprehensive modules</li><li>Expert insights</li><li>Practical projects</li></ul>",
     coursePrice: 3300,
     isPublished: true,
     discount: 25,
     courseContent: [
       {
-        chapterId: "course_9_chapter1",
+        chapter_id: "course_9_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Angular Deep Dive",
         chapterContent: [
           {
-            lectureId: "course_9_chapter1_lecture1",
+            lecture_id: "course_9_chapter1_lecture1",
             lectureTitle: "Introduction to Angular Deep Dive",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy9_1",
@@ -582,7 +582,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_9_chapter1_lecture2",
+            lecture_id: "course_9_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy9_2",
@@ -592,12 +592,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_9_chapter2",
+        chapter_id: "course_9_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Angular Deep Dive",
         chapterContent: [
           {
-            lectureId: "course_9_chapter2_lecture1",
+            lecture_id: "course_9_chapter2_lecture1",
             lectureTitle: "Core Concepts of Angular Deep Dive",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy9_3",
@@ -605,7 +605,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_9_chapter2_lecture2",
+            lecture_id: "course_9_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy9_4",
@@ -619,18 +619,18 @@ export const dummyCourses = [
     enrolledStudents: ["user_course_9_1", "user_course_9_2", "user_course_9_3"],
     courseRating: [
       {
-        userId: "user_rating_course_9",
+        user_id: "user_rating_course_9",
         rating: 5,
-        _id: "rating_course_9_1",
+        __id: "rating_course_9_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=9",
+    courseThumnail: "https://img.youtube.com/vi/5qCAVg0pvVg/maxresdefault.jpg",
   },
   {
-    id: "course_10",
+    _id: "course_10",
     courseTitle: "CSS Mastery",
     courseDescription:
       "<h2>About this course</h2><p>This course dives deep into CSS Mastery to help you create stunning designs.</p><ul><li>Responsive design</li><li>Modern techniques</li><li>Creative projects</li></ul>",
@@ -639,12 +639,12 @@ export const dummyCourses = [
     discount: 30,
     courseContent: [
       {
-        chapterId: "course_10_chapter1",
+        chapter_id: "course_10_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with CSS Mastery",
         chapterContent: [
           {
-            lectureId: "course_10_chapter1_lecture1",
+            lecture_id: "course_10_chapter1_lecture1",
             lectureTitle: "Introduction to CSS Mastery",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy10_1",
@@ -652,7 +652,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_10_chapter1_lecture2",
+            lecture_id: "course_10_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy10_2",
@@ -662,12 +662,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_10_chapter2",
+        chapter_id: "course_10_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in CSS Mastery",
         chapterContent: [
           {
-            lectureId: "course_10_chapter2_lecture1",
+            lecture_id: "course_10_chapter2_lecture1",
             lectureTitle: "Core Concepts of CSS Mastery",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy10_3",
@@ -675,7 +675,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_10_chapter2_lecture2",
+            lecture_id: "course_10_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy10_4",
@@ -693,32 +693,32 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_10",
+        user_id: "user_rating_course_10",
         rating: 5,
-        _id: "rating_course_10_1",
+        __id: "rating_course_10_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=10",
+    courseThumnail: "https://img.youtube.com/vi/ESnrn1kAD4E/maxresdefault.jpg",
   },
   {
-    id: "course_11",
+    _id: "course_11",
     courseTitle: "HTML5 in Depth",
     courseDescription:
-      "<h2>About this course</h2><p>This course provides an in-depth look at HTML5 in Depth, covering new features and best practices.</p><ul><li>Semantic HTML</li><li>Responsive design</li><li>Modern techniques</li></ul>",
+      "<h2>About this course</h2><p>This course prov_ides an in-depth look at HTML5 in Depth, covering new features and best practices.</p><ul><li>Semantic HTML</li><li>Responsive design</li><li>Modern techniques</li></ul>",
     coursePrice: 3500,
     isPublished: true,
     discount: 10,
     courseContent: [
       {
-        chapterId: "course_11_chapter1",
+        chapter_id: "course_11_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with HTML5 in Depth",
         chapterContent: [
           {
-            lectureId: "course_11_chapter1_lecture1",
+            lecture_id: "course_11_chapter1_lecture1",
             lectureTitle: "Introduction to HTML5 in Depth",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy11_1",
@@ -726,7 +726,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_11_chapter1_lecture2",
+            lecture_id: "course_11_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy11_2",
@@ -736,12 +736,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_11_chapter2",
+        chapter_id: "course_11_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in HTML5 in Depth",
         chapterContent: [
           {
-            lectureId: "course_11_chapter2_lecture1",
+            lecture_id: "course_11_chapter2_lecture1",
             lectureTitle: "Core Concepts of HTML5 in Depth",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy11_3",
@@ -749,7 +749,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_11_chapter2_lecture2",
+            lecture_id: "course_11_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy11_4",
@@ -767,18 +767,18 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_11",
+        user_id: "user_rating_course_11",
         rating: 5,
-        _id: "rating_course_11_1",
+        __id: "rating_course_11_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=11",
+    courseThumnail: "https://img.youtube.com/vi/mzPxo7Y6JyA/maxresdefault.jpg",
   },
   {
-    id: "course_12",
+    _id: "course_12",
     courseTitle: "SQL Fundamentals",
     courseDescription:
       "<h2>About this course</h2><p>This course covers SQL Fundamentals, including querying, joins, and database design.</p><ul><li>Interactive exercises</li><li>Real-world examples</li><li>Hands-on projects</li></ul>",
@@ -787,12 +787,12 @@ export const dummyCourses = [
     discount: 15,
     courseContent: [
       {
-        chapterId: "course_12_chapter1",
+        chapter_id: "course_12_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with SQL Fundamentals",
         chapterContent: [
           {
-            lectureId: "course_12_chapter1_lecture1",
+            lecture_id: "course_12_chapter1_lecture1",
             lectureTitle: "Introduction to SQL Fundamentals",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy12_1",
@@ -800,7 +800,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_12_chapter1_lecture2",
+            lecture_id: "course_12_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy12_2",
@@ -810,12 +810,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_12_chapter2",
+        chapter_id: "course_12_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in SQL Fundamentals",
         chapterContent: [
           {
-            lectureId: "course_12_chapter2_lecture1",
+            lecture_id: "course_12_chapter2_lecture1",
             lectureTitle: "Core Concepts of SQL Fundamentals",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy12_3",
@@ -823,7 +823,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_12_chapter2_lecture2",
+            lecture_id: "course_12_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy12_4",
@@ -841,18 +841,18 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_12",
+        user_id: "user_rating_course_12",
         rating: 5,
-        _id: "rating_course_12_1",
+        __id: "rating_course_12_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=12",
+    courseThumnail: "https://img.youtube.com/vi/xiUTqnI6xk8/maxresdefault.jpg",
   },
   {
-    id: "course_13",
+    _id: "course_13",
     courseTitle: "NoSQL Databases",
     courseDescription:
       "<h2>About this course</h2><p>This course introduces NoSQL Databases, covering key concepts and practical implementations.</p><ul><li>Scalable solutions</li><li>Hands-on labs</li><li>Expert insights</li></ul>",
@@ -861,12 +861,12 @@ export const dummyCourses = [
     discount: 20,
     courseContent: [
       {
-        chapterId: "course_13_chapter1",
+        chapter_id: "course_13_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with NoSQL Databases",
         chapterContent: [
           {
-            lectureId: "course_13_chapter1_lecture1",
+            lecture_id: "course_13_chapter1_lecture1",
             lectureTitle: "Introduction to NoSQL Databases",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy13_1",
@@ -874,7 +874,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_13_chapter1_lecture2",
+            lecture_id: "course_13_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy13_2",
@@ -884,12 +884,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_13_chapter2",
+        chapter_id: "course_13_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in NoSQL Databases",
         chapterContent: [
           {
-            lectureId: "course_13_chapter2_lecture1",
+            lecture_id: "course_13_chapter2_lecture1",
             lectureTitle: "Core Concepts of NoSQL Databases",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy13_3",
@@ -897,7 +897,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_13_chapter2_lecture2",
+            lecture_id: "course_13_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy13_4",
@@ -915,32 +915,32 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_13",
+        user_id: "user_rating_course_13",
         rating: 5,
-        _id: "rating_course_13_1",
+        __id: "rating_course_13_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=13",
+    courseThumnail: "https://img.youtube.com/vi/0buKQHokLK8/maxresdefault.jpg",
   },
   {
-    id: "course_14",
+    _id: "course_14",
     courseTitle: "Mobile App Development",
     courseDescription:
-      "<h2>About this course</h2><p>This course covers Mobile App Development, teaching you how to build apps for Android and iOS.</p><ul><li>Cross-platform development</li><li>Real-world projects</li><li>Industry best practices</li></ul>",
+      "<h2>About this course</h2><p>This course covers Mobile App Development, teaching you how to build apps for Andro_id and iOS.</p><ul><li>Cross-platform development</li><li>Real-world projects</li><li>Industry best practices</li></ul>",
     coursePrice: 3800,
     isPublished: true,
     discount: 25,
     courseContent: [
       {
-        chapterId: "course_14_chapter1",
+        chapter_id: "course_14_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Mobile App Development",
         chapterContent: [
           {
-            lectureId: "course_14_chapter1_lecture1",
+            lecture_id: "course_14_chapter1_lecture1",
             lectureTitle: "Introduction to Mobile App Development",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy14_1",
@@ -948,7 +948,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_14_chapter1_lecture2",
+            lecture_id: "course_14_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy14_2",
@@ -958,12 +958,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_14_chapter2",
+        chapter_id: "course_14_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Mobile App Development",
         chapterContent: [
           {
-            lectureId: "course_14_chapter2_lecture1",
+            lecture_id: "course_14_chapter2_lecture1",
             lectureTitle: "Core Concepts of Mobile App Development",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy14_3",
@@ -971,7 +971,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_14_chapter2_lecture2",
+            lecture_id: "course_14_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy14_4",
@@ -989,32 +989,32 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_14",
+        user_id: "user_rating_course_14",
         rating: 5,
-        _id: "rating_course_14_1",
+        __id: "rating_course_14_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=14",
+    courseThumnail: "https://img.youtube.com/vi/7nQsQ0rvYqQ/maxresdefault.jpg",
   },
   {
-    id: "course_15",
+    _id: "course_15",
     courseTitle: "Game Development with Unity",
     courseDescription:
-      "<h2>About this course</h2><p>This course introduces Game Development with Unity, covering both 2D and 3D game design.</p><ul><li>Interactive lessons</li><li>Practical projects</li><li>Expert guidance</li></ul>",
+      "<h2>About this course</h2><p>This course introduces Game Development with Unity, covering both 2D and 3D game design.</p><ul><li>Interactive lessons</li><li>Practical projects</li><li>Expert gu_idance</li></ul>",
     coursePrice: 3900,
     isPublished: true,
     discount: 30,
     courseContent: [
       {
-        chapterId: "course_15_chapter1",
+        chapter_id: "course_15_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Game Development with Unity",
         chapterContent: [
           {
-            lectureId: "course_15_chapter1_lecture1",
+            lecture_id: "course_15_chapter1_lecture1",
             lectureTitle: "Introduction to Game Development with Unity",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy15_1",
@@ -1022,7 +1022,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_15_chapter1_lecture2",
+            lecture_id: "course_15_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy15_2",
@@ -1032,12 +1032,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_15_chapter2",
+        chapter_id: "course_15_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Game Development with Unity",
         chapterContent: [
           {
-            lectureId: "course_15_chapter2_lecture1",
+            lecture_id: "course_15_chapter2_lecture1",
             lectureTitle: "Core Concepts of Game Development with Unity",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy15_3",
@@ -1045,7 +1045,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_15_chapter2_lecture2",
+            lecture_id: "course_15_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy15_4",
@@ -1063,18 +1063,18 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_15",
+        user_id: "user_rating_course_15",
         rating: 5,
-        _id: "rating_course_15_1",
+        __id: "rating_course_15_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=15",
+    courseThumnail: "https://img.youtube.com/vi/L6H34ox6Q4M/maxresdefault.jpg",
   },
   {
-    id: "course_16",
+    _id: "course_16",
     courseTitle: "C++ Programming",
     courseDescription:
       "<h2>About this course</h2><p>This course covers C++ Programming, from basics to advanced concepts.</p><ul><li>In-depth tutorials</li><li>Hands-on examples</li><li>Project-based learning</li></ul>",
@@ -1083,12 +1083,12 @@ export const dummyCourses = [
     discount: 10,
     courseContent: [
       {
-        chapterId: "course_16_chapter1",
+        chapter_id: "course_16_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with C++ Programming",
         chapterContent: [
           {
-            lectureId: "course_16_chapter1_lecture1",
+            lecture_id: "course_16_chapter1_lecture1",
             lectureTitle: "Introduction to C++ Programming",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy16_1",
@@ -1096,7 +1096,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_16_chapter1_lecture2",
+            lecture_id: "course_16_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy16_2",
@@ -1106,12 +1106,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_16_chapter2",
+        chapter_id: "course_16_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in C++ Programming",
         chapterContent: [
           {
-            lectureId: "course_16_chapter2_lecture1",
+            lecture_id: "course_16_chapter2_lecture1",
             lectureTitle: "Core Concepts of C++ Programming",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy16_3",
@@ -1119,7 +1119,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_16_chapter2_lecture2",
+            lecture_id: "course_16_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy16_4",
@@ -1137,18 +1137,18 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_16",
+        user_id: "user_rating_course_16",
         rating: 5,
-        _id: "rating_course_16_1",
+        __id: "rating_course_16_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=16",
+    courseThumnail: "https://img.youtube.com/vi/e7sAf4SbS_g/maxresdefault.jpg",
   },
   {
-    id: "course_17",
+    _id: "course_17",
     courseTitle: "Java Programming",
     courseDescription:
       "<h2>About this course</h2><p>This course covers Java Programming, offering a deep dive into object-oriented programming and more.</p><ul><li>Comprehensive lessons</li><li>Practical examples</li><li>Expert insights</li></ul>",
@@ -1157,12 +1157,12 @@ export const dummyCourses = [
     discount: 15,
     courseContent: [
       {
-        chapterId: "course_17_chapter1",
+        chapter_id: "course_17_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Java Programming",
         chapterContent: [
           {
-            lectureId: "course_17_chapter1_lecture1",
+            lecture_id: "course_17_chapter1_lecture1",
             lectureTitle: "Introduction to Java Programming",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy17_1",
@@ -1170,7 +1170,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_17_chapter1_lecture2",
+            lecture_id: "course_17_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy17_2",
@@ -1180,12 +1180,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_17_chapter2",
+        chapter_id: "course_17_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Java Programming",
         chapterContent: [
           {
-            lectureId: "course_17_chapter2_lecture1",
+            lecture_id: "course_17_chapter2_lecture1",
             lectureTitle: "Core Concepts of Java Programming",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy17_3",
@@ -1193,7 +1193,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_17_chapter2_lecture2",
+            lecture_id: "course_17_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy17_4",
@@ -1211,32 +1211,32 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_17",
+        user_id: "user_rating_course_17",
         rating: 5,
-        _id: "rating_course_17_1",
+        __id: "rating_course_17_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=17",
+    courseThumnail: "https://img.youtube.com/vi/eIrMbAQSU34/maxresdefault.jpg",
   },
   {
-    id: "course_18",
+    _id: "course_18",
     courseTitle: "PHP for Web",
     courseDescription:
-      "<h2>About this course</h2><p>This course covers PHP for Web development, teaching you server-side scripting and more.</p><ul><li>Interactive examples</li><li>Real-world projects</li><li>Expert tips</li></ul>",
+      "<h2>About this course</h2><p>This course covers PHP for Web development, teaching you server-s_ide scripting and more.</p><ul><li>Interactive examples</li><li>Real-world projects</li><li>Expert tips</li></ul>",
     coursePrice: 4200,
     isPublished: true,
     discount: 20,
     courseContent: [
       {
-        chapterId: "course_18_chapter1",
+        chapter_id: "course_18_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with PHP for Web",
         chapterContent: [
           {
-            lectureId: "course_18_chapter1_lecture1",
+            lecture_id: "course_18_chapter1_lecture1",
             lectureTitle: "Introduction to PHP for Web",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy18_1",
@@ -1244,7 +1244,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_18_chapter1_lecture2",
+            lecture_id: "course_18_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy18_2",
@@ -1254,12 +1254,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_18_chapter2",
+        chapter_id: "course_18_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in PHP for Web",
         chapterContent: [
           {
-            lectureId: "course_18_chapter2_lecture1",
+            lecture_id: "course_18_chapter2_lecture1",
             lectureTitle: "Core Concepts of PHP for Web",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy18_3",
@@ -1267,7 +1267,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_18_chapter2_lecture2",
+            lecture_id: "course_18_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy18_4",
@@ -1285,18 +1285,18 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_18",
+        user_id: "user_rating_course_18",
         rating: 5,
-        _id: "rating_course_18_1",
+        __id: "rating_course_18_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=18",
+    courseThumnail: "https://img.youtube.com/vi/AJRGxd9cVaY/maxresdefault.jpg",
   },
   {
-    id: "course_19",
+    _id: "course_19",
     courseTitle: "Ruby on Rails",
     courseDescription:
       "<h2>About this course</h2><p>This course covers Ruby on Rails, focusing on building scalable web applications.</p><ul><li>Convention over configuration</li><li>Hands-on projects</li><li>Expert instruction</li></ul>",
@@ -1305,12 +1305,12 @@ export const dummyCourses = [
     discount: 25,
     courseContent: [
       {
-        chapterId: "course_19_chapter1",
+        chapter_id: "course_19_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Ruby on Rails",
         chapterContent: [
           {
-            lectureId: "course_19_chapter1_lecture1",
+            lecture_id: "course_19_chapter1_lecture1",
             lectureTitle: "Introduction to Ruby on Rails",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy19_1",
@@ -1318,7 +1318,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_19_chapter1_lecture2",
+            lecture_id: "course_19_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy19_2",
@@ -1328,12 +1328,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_19_chapter2",
+        chapter_id: "course_19_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Ruby on Rails",
         chapterContent: [
           {
-            lectureId: "course_19_chapter2_lecture1",
+            lecture_id: "course_19_chapter2_lecture1",
             lectureTitle: "Core Concepts of Ruby on Rails",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy19_3",
@@ -1341,7 +1341,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_19_chapter2_lecture2",
+            lecture_id: "course_19_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy19_4",
@@ -1359,18 +1359,18 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_19",
+        user_id: "user_rating_course_19",
         rating: 5,
-        _id: "rating_course_19_1",
+        __id: "rating_course_19_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://source.unsplash.com/random/300x200?sig=19",
+    courseThumnail: "https://img.youtube.com/vi/w9yNsTAp-Mg/maxresdefault.jpg",
   },
   {
-    id: "course_20",
+    _id: "course_20",
     courseTitle: "Go Lang Crash Course",
     courseDescription:
       "<h2>About this course</h2><p>This course introduces Go Lang Crash Course, covering the basics and advanced topics of Go programming.</p><ul><li>Efficient coding practices</li><li>Real-world projects</li><li>Expert tutorials</li></ul>",
@@ -1379,12 +1379,12 @@ export const dummyCourses = [
     discount: 30,
     courseContent: [
       {
-        chapterId: "course_20_chapter1",
+        chapter_id: "course_20_chapter1",
         chapterOrder: 1,
         chaptertitle: "Getting Started with Go Lang Crash Course",
         chapterContent: [
           {
-            lectureId: "course_20_chapter1_lecture1",
+            lecture_id: "course_20_chapter1_lecture1",
             lectureTitle: "Introduction to Go Lang Crash Course",
             lectureDuration: 18,
             lectureUrl: "https://youtu.be/dummy20_1",
@@ -1392,7 +1392,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_20_chapter1_lecture2",
+            lecture_id: "course_20_chapter1_lecture2",
             lectureTitle: "Setup and Installation",
             lectureDuration: 20,
             lectureUrl: "https://youtu.be/dummy20_2",
@@ -1402,12 +1402,12 @@ export const dummyCourses = [
         ],
       },
       {
-        chapterId: "course_20_chapter2",
+        chapter_id: "course_20_chapter2",
         chapterOrder: 2,
         chaptertitle: "Advanced Concepts in Go Lang Crash Course",
         chapterContent: [
           {
-            lectureId: "course_20_chapter2_lecture1",
+            lecture_id: "course_20_chapter2_lecture1",
             lectureTitle: "Core Concepts of Go Lang Crash Course",
             lectureDuration: 25,
             lectureUrl: "https://youtu.be/dummy20_3",
@@ -1415,7 +1415,7 @@ export const dummyCourses = [
             lectureOrder: 1,
           },
           {
-            lectureId: "course_20_chapter2_lecture2",
+            lecture_id: "course_20_chapter2_lecture2",
             lectureTitle: "Practical Applications",
             lectureDuration: 30,
             lectureUrl: "https://youtu.be/dummy20_4",
@@ -1433,14 +1433,14 @@ export const dummyCourses = [
     ],
     courseRating: [
       {
-        userId: "user_rating_course_20",
+        user_id: "user_rating_course_20",
         rating: 5,
-        _id: "rating_course_20_1",
+        __id: "rating_course_20_1",
       },
     ],
     createdAt: "2025-01-17T08:16:53.622Z",
     updatedAt: "2025-02-04T05:12:50.422Z",
     _v: 0,
-    courseThumnail: "https://img.youtube.com/vi/add-here/maxresdefault.jpg0",
+    courseThumnail: "https://img.youtube.com/vi/un6ZyFkqFKo/maxresdefault.jpg",
   },
 ];
